@@ -4,7 +4,7 @@
 #include <asm/pgtable.h>
 
 
-SYSCALL_DEFINE1(my_get_physical_addresses, void *, virt_addr)
+SYSCALL_DEFINE1(get_my_physical_addr, void *, virt_addr)
 {
 	pgd_t *pgd;
 	p4d_t *p4d;
