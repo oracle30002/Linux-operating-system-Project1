@@ -3,7 +3,7 @@
 #include <sys/wait.h>
 
 
-//void * my_get_physical_addresses(void *);
+//void * get_my_physical_addr(void *);
 void *get_my_physical_addr(void *vaddr)
 {
     return (void *)syscall(449, vaddr);
